@@ -17,8 +17,6 @@
 *.o
 *.obj
 
-# results files
-*.csv
 
 # Precompiled Headers
 *.gch
