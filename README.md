@@ -3,6 +3,16 @@
 # Usage
 src/main.cpp specifies the experiments to be run. The paths in this file specify where the results are saved as .csv files. Build the code by running make in the root directory. Then ./run in the root directory to start running experiments.
 
+# Citing this work
+```
+@article{rigter2022planning,
+  title={Planning for Risk-Aversion and Expected Value in MDPs},
+  author={Rigter, Marc and Duckworth, Paul and Lacerda, Bruno and Hawes, Nick},
+  journal={International Conference on Automated Planning and Scheduling},
+  year={2022}
+}
+```
+
 # Dependencies
 The following dependencies are required:
 - GSL
