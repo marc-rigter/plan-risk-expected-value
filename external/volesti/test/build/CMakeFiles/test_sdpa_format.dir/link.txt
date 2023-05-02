@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/test_sdpa_format.dir/test_sdpa_format.o CMakeFiles/test_main.dir/test_main.o  -o test_sdpa_format 

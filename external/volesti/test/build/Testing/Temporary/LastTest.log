@@ -1,0 +1,1818 @@
+Start testing: Nov 25 12:07 GMT
+----------------------------------------------------------
+1/40 Testing: test_psrf
+1/40 Test: test_psrf
+Command: "/home/marcrigter/github/volume_approximation/test/build/mcmc_diagnostics_test" "-tc=psrf"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"test_psrf" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing psrf on Billiard Walk and H-cube10
+psrf = 1.002
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"test_psrf" end time: Nov 25 12:07 GMT
+"test_psrf" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/40 Testing: test_geweke
+2/40 Test: test_geweke
+Command: "/home/marcrigter/github/volume_approximation/test/build/mcmc_diagnostics_test" "-tc=geweke"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"test_geweke" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing psrf on Billiard Walk and H-cube10
+geweke = 1
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"test_geweke" end time: Nov 25 12:07 GMT
+"test_geweke" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/40 Testing: test_raftery
+3/40 Test: test_raftery
+Command: "/home/marcrigter/github/volume_approximation/test/build/mcmc_diagnostics_test" "-tc=raftery"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"test_raftery" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing psrf on Billiard Walk and H-cube10
+raftery walk length to get indepedent samples, 1st coordinate = 1
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"test_raftery" end time: Nov 25 12:07 GMT
+"test_raftery" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/40 Testing: ode_solvers_test_first_order
+4/40 Test: ode_solvers_test_first_order
+Command: "/home/marcrigter/github/volume_approximation/test/build/ode_solvers_test" "-tc=first_order"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"ode_solvers_test_first_order" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing solution to dx / dt = -x
+Dimensionality: 100
+Norm of states after 2000 steps: 1.86376e-08
+Target Norm: 0
+Error (relative if applicable): 1.86376e-08
+ETA (us): 301
+
+Dimensionality: 100
+Norm of states after 1000 steps: 1.14307e-56
+Target Norm: 0
+Error (relative if applicable): 1.14307e-56
+ETA (us): 1161
+
+Dimensionality: 100
+Norm of states after 1000 steps: 7.02354e-23
+Target Norm: 0
+Error (relative if applicable): 7.02354e-23
+ETA (us): 14086
+
+--- Testing solution to dx / dt = x in [-1, 1]
+Dimensionality: 1
+Norm of states after 1000 steps: 0.998319
+Target Norm: 1
+Error (relative if applicable): 0.00168059
+ETA (us): 905
+
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      1 skipped
+[doctest] assertions:      4 |      4 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ode_solvers_test_first_order" end time: Nov 25 12:07 GMT
+"ode_solvers_test_first_order" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/40 Testing: ode_solvers_test_second_order
+5/40 Test: ode_solvers_test_second_order
+Command: "/home/marcrigter/github/volume_approximation/test/build/ode_solvers_test" "-tc=second_order"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"ode_solvers_test_second_order" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing solution to d^2x / dt^2 = -x
+Dimensionality: 3
+Target UB Norm for index 0: 1.90526
+ETA (us): 167
+
+Dimensionality: 1
+Target UB Norm for index 0: 1.1
+ETA (us): 207
+
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      1 skipped
+[doctest] assertions:   2000 |   2000 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ode_solvers_test_second_order" end time: Nov 25 12:07 GMT
+"ode_solvers_test_second_order" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/40 Testing: root_finders_test_root_finders
+6/40 Test: root_finders_test_root_finders
+Command: "/home/marcrigter/github/volume_approximation/test/build/root_finders_test" "-tc=root_finders"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"root_finders_test_root_finders" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      0 |      0 passed |      0 failed |      0 skipped
+[doctest] assertions:      0 |      0 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"root_finders_test_root_finders" end time: Nov 25 12:07 GMT
+"root_finders_test_root_finders" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/40 Testing: boundary_oracles_test_h_poly_oracles
+7/40 Test: boundary_oracles_test_h_poly_oracles
+Command: "/home/marcrigter/github/volume_approximation/test/build/boundary_oracles_test" "-tc=h_poly_oracles"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"boundary_oracles_test_h_poly_oracles" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      0 |      0 passed |      0 failed |      0 skipped
+[doctest] assertions:      0 |      0 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"boundary_oracles_test_h_poly_oracles" end time: Nov 25 12:07 GMT
+"boundary_oracles_test_h_poly_oracles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/40 Testing: test_sdpa_format
+8/40 Test: test_sdpa_format
+Command: "/home/marcrigter/github/volume_approximation/test/build/test_sdpa_format" "-tc=sdpa_format_parser"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"test_sdpa_format" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      0 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_sdpa_format" end time: Nov 25 12:07 GMT
+"test_sdpa_format" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/40 Testing: volume_sob_hpolytope_cube
+9/40 Test: volume_sob_hpolytope_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_hpolytope" "-tc=cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_hpolytope_cube" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-cube10
+Number type: d
+Computed volume 1014.69
+Expected volume = 1014.69
+Relative error (expected) = 3.58226e-06
+Relative error (exact) = 0.00908825
+Computed volume 1049.22
+Expected volume = 1049.22
+Relative error (expected) = 3.55462e-07
+Relative error (exact) = 0.0246293
+Computed volume 1055.73
+Expected volume = 1055.73
+Relative error (expected) = 2.86511e-07
+Relative error (exact) = 0.0309866
+Computed volume 1055.73
+Expected volume = 1055.73
+Relative error (expected) = 2.86511e-07
+Relative error (exact) = 0.0309866
+--- Testing volume of H-cube20
+Number type: d
+Computed volume 1.02978e+06
+Expected volume = 1.02978e+06
+Relative error (expected) = 9.82037e-07
+Relative error (exact) = 0.0179262
+Computed volume 1.05618e+06
+Expected volume = 1.05618e+06
+Relative error (expected) = 2.67147e-06
+Relative error (exact) = 0.00725443
+Computed volume 1.05883e+06
+Expected volume = 1.05883e+06
+Relative error (expected) = 1.20533e-06
+Relative error (exact) = 0.00977776
+Computed volume 1.05883e+06
+Expected volume = 1.05883e+06
+Relative error (expected) = 1.20533e-06
+Relative error (exact) = 0.00977776
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      8 |      8 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   5.04 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_hpolytope_cube" end time: Nov 25 12:07 GMT
+"volume_sob_hpolytope_cube" time elapsed: 00:00:05
+----------------------------------------------------------
+
+10/40 Testing: volume_sob_hpolytope_cross
+10/40 Test: volume_sob_hpolytope_cross
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_hpolytope" "-tc=cross"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_hpolytope_cross" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-cross10
+Number type: d
+Computed volume 0.000283788
+Expected volume = 0.000283788
+Relative error (expected) = 9.97052e-07
+Relative error (exact) = 0.0056729
+Computed volume 0.000280815
+Expected volume = 0.000280815
+Relative error (expected) = 2.44511e-07
+Relative error (exact) = 0.00486191
+Computed volume 0.000288664
+Expected volume = 0.000296745
+Relative error (expected) = 0.0272332
+Relative error (exact) = 0.0229521
+Computed volume 0.000288664
+Expected volume = 0.000296745
+Relative error (expected) = 0.0272332
+Relative error (exact) = 0.0229521
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      4 |      4 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   2.31 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_hpolytope_cross" end time: Nov 25 12:07 GMT
+"volume_sob_hpolytope_cross" time elapsed: 00:00:02
+----------------------------------------------------------
+
+11/40 Testing: volume_sob_hpolytope_birkhoff
+11/40 Test: volume_sob_hpolytope_birkhoff
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_hpolytope" "-tc=birk"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_hpolytope_birkhoff" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-birk3
+Number type: d
+Computed volume 0.130806
+Expected volume = 0.130806
+Relative error (expected) = 1.25212e-06
+Relative error (exact) = 0.0464493
+Computed volume 0.126776
+Expected volume = 0.126776
+Relative error (expected) = 1.0525e-07
+Relative error (exact) = 0.0142079
+Computed volume 0.122177
+Expected volume = 0.122177
+Relative error (expected) = 3.51054e-06
+Relative error (exact) = 0.0225806
+Computed volume 0.122177
+Expected volume = 0.122177
+Relative error (expected) = 3.51054e-06
+Relative error (exact) = 0.0225806
+--- Testing volume of H-birk4
+Number type: d
+Computed volume 0.00112925
+Expected volume = 0.00112925
+Relative error (expected) = 1.75841e-06
+Relative error (exact) = 0.164156
+Computed volume 0.000898527
+Expected volume = 0.000898527
+Relative error (expected) = 3.13174e-07
+Relative error (exact) = 0.073701
+Computed volume 0.000951546
+Expected volume = 0.000945447
+Relative error (expected) = 0.00645102
+Relative error (exact) = 0.0190428
+Computed volume 0.000951546
+Expected volume = 0.000945447
+Relative error (expected) = 0.00645102
+Relative error (exact) = 0.0190428
+--- Testing volume of H-birk5
+Number type: d
+Computed volume 1.8241e-07
+Expected volume = 1.8241e-07
+Relative error (expected) = 2.65498e-07
+Relative error (exact) = 0.189289
+Computed volume 2.07943e-07
+Expected volume = 2.07943e-07
+Relative error (expected) = 1.68918e-06
+Relative error (exact) = 0.0758105
+Computed volume 2.207e-07
+Expected volume = 2.47519e-07
+Relative error (expected) = 0.108352
+Relative error (exact) = 0.0191121
+Computed volume 2.207e-07
+Expected volume = 2.47519e-07
+Relative error (expected) = 0.108352
+Relative error (exact) = 0.0191121
+--- Testing volume of H-birk6
+Number type: d
+Computed volume 5.27883e-13
+Expected volume = 5.27883e-13
+Relative error (expected) = 7.21012e-07
+Relative error (exact) = 0.441717
+Computed volume 9.52618e-13
+Expected volume = 9.48912e-13
+Relative error (expected) = 0.00390541
+Relative error (exact) = 0.00747925
+Computed volume 7.73699e-13
+Expected volume = 6.96476e-13
+Relative error (expected) = 0.110876
+Relative error (exact) = 0.181744
+Computed volume 7.73699e-13
+Expected volume = 6.96476e-13
+Relative error (expected) = 0.110876
+Relative error (exact) = 0.181744
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:     16 |     16 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  25.97 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_hpolytope_birkhoff" end time: Nov 25 12:07 GMT
+"volume_sob_hpolytope_birkhoff" time elapsed: 00:00:25
+----------------------------------------------------------
+
+12/40 Testing: volume_sob_hpolytope_prod_simplex
+12/40 Test: volume_sob_hpolytope_prod_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_hpolytope" "-tc=prod_simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_hpolytope_prod_simplex" start time: Nov 25 12:07 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-prod_simplex5
+Number type: d
+Computed volume 7.35223e-05
+Expected volume = 7.35223e-05
+Relative error (expected) = 4.32309e-07
+Relative error (exact) = 0.0587207
+Computed volume 6.86576e-05
+Expected volume = 6.86576e-05
+Relative error (expected) = 4.34839e-07
+Relative error (exact) = 0.011331
+Computed volume 7.11814e-05
+Expected volume = 7.43136e-05
+Relative error (expected) = 0.0421484
+Relative error (exact) = 0.0250122
+Computed volume 7.11814e-05
+Expected volume = 7.43136e-05
+Relative error (expected) = 0.0421484
+Relative error (exact) = 0.0250122
+--- Testing volume of H-prod_simplex10
+Number type: d
+Computed volume 7.38925e-14
+Expected volume = 7.38925e-14
+Relative error (expected) = 7.22848e-08
+Relative error (exact) = 0.0269695
+Computed volume 8.01351e-14
+Expected volume = 8.01351e-14
+Relative error (expected) = 2.69799e-07
+Relative error (exact) = 0.0552345
+Computed volume 7.36746e-14
+Expected volume = 8.27387e-14
+Relative error (expected) = 0.109551
+Relative error (exact) = 0.0298389
+Computed volume 7.36746e-14
+Expected volume = 8.27387e-14
+Relative error (expected) = 0.109551
+Relative error (exact) = 0.0298389
+--- Testing volume of H-prod_simplex15
+Number type: d
+Computed volume 5.61238e-25
+Expected volume = 5.61238e-25
+Relative error (expected) = 5.44385e-07
+Relative error (exact) = 0.0402756
+Computed volume 5.87558e-25
+Expected volume = 5.87558e-25
+Relative error (expected) = 7.62152e-07
+Relative error (exact) = 0.00473061
+Computed volume 5.45922e-25
+Expected volume = 5.48179e-25
+Relative error (expected) = 0.00411793
+Relative error (exact) = 0.0664673
+Computed volume 5.45922e-25
+Expected volume = 5.48179e-25
+Relative error (expected) = 0.00411793
+Relative error (exact) = 0.0664673
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:     12 |     12 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  31.28 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_hpolytope_prod_simplex" end time: Nov 25 12:08 GMT
+"volume_sob_hpolytope_prod_simplex" time elapsed: 00:00:31
+----------------------------------------------------------
+
+13/40 Testing: volume_sob_hpolytope_simplex
+13/40 Test: volume_sob_hpolytope_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_hpolytope" "-tc=simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_hpolytope_simplex" start time: Nov 25 12:08 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-simplex10
+Number type: d
+Computed volume 2.98074e-07
+Expected volume = 2.98074e-07
+Relative error (expected) = 2.94398e-07
+Relative error (exact) = 0.0816512
+Computed volume 2.52756e-07
+Expected volume = 2.52756e-07
+Relative error (expected) = 1.43151e-06
+Relative error (exact) = 0.0827977
+Computed volume 2.79236e-07
+Expected volume = 2.89366e-07
+Relative error (expected) = 0.0350089
+Relative error (exact) = 0.0132902
+Computed volume 2.79236e-07
+Expected volume = 2.89366e-07
+Relative error (expected) = 0.0350089
+Relative error (exact) = 0.0132902
+--- Testing volume of H-simplex20
+Number type: d
+Computed volume 4.64611e-19
+Expected volume = 4.64611e-19
+Relative error (expected) = 5.57364e-07
+Relative error (exact) = 0.130352
+Computed volume 4.4317e-19
+Expected volume = 4.4317e-19
+Relative error (expected) = 4.54657e-07
+Relative error (exact) = 0.0781897
+Computed volume 4.24365e-19
+Expected volume = 4.16737e-19
+Relative error (expected) = 0.018305
+Relative error (exact) = 0.0324394
+Computed volume 4.24365e-19
+Expected volume = 4.16737e-19
+Relative error (expected) = 0.018305
+Relative error (exact) = 0.0324394
+--- Testing volume of H-simplex30
+Number type: d
+Computed volume 3.65853e-33
+Expected volume = 3.65853e-33
+Relative error (expected) = 6.89527e-08
+Relative error (exact) = 0.0295645
+Computed volume 3.86474e-33
+Expected volume = 3.86474e-33
+Relative error (expected) = 8.17562e-07
+Relative error (exact) = 0.0251342
+Computed volume 4.13943e-33
+Expected volume = 4.04136e-33
+Relative error (expected) = 0.0242673
+Relative error (exact) = 0.0979964
+Computed volume 4.13943e-33
+Expected volume = 4.04136e-33
+Relative error (expected) = 0.0242673
+Relative error (exact) = 0.0979964
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:     12 |     12 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  32.43 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_hpolytope_simplex" end time: Nov 25 12:08 GMT
+"volume_sob_hpolytope_simplex" time elapsed: 00:00:32
+----------------------------------------------------------
+
+14/40 Testing: volume_sob_hpolytope_skinny_cube
+14/40 Test: volume_sob_hpolytope_skinny_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_hpolytope" "-tc=skinny_cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_hpolytope_skinny_cube" start time: Nov 25 12:08 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-skinny_cube10
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      0 |      0 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_hpolytope_skinny_cube" end time: Nov 25 12:08 GMT
+"volume_sob_hpolytope_skinny_cube" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/40 Testing: volume_sob_vpolytope_cube
+15/40 Test: volume_sob_vpolytope_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_vpolytope" "-tc=cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_vpolytope_cube" start time: Nov 25 12:08 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-cube3
+Number type: d
+Computed volume 8.80869
+Expected volume = 8.80869
+Relative error (expected) = 2.41772e-07
+Relative error (exact) = 0.101087
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   3.10 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_vpolytope_cube" end time: Nov 25 12:08 GMT
+"volume_sob_vpolytope_cube" time elapsed: 00:00:03
+----------------------------------------------------------
+
+16/40 Testing: volume_sob_vpolytope_cross
+16/40 Test: volume_sob_vpolytope_cross
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_vpolytope" "-tc=cross"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_vpolytope_cross" start time: Nov 25 12:08 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-cross5
+Number type: d
+Computed volume 0.276845
+Expected volume = 0.276845
+Relative error (expected) = 6.91358e-07
+Relative error (exact) = 0.038168
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   4.69 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_vpolytope_cross" end time: Nov 25 12:08 GMT
+"volume_sob_vpolytope_cross" time elapsed: 00:00:04
+----------------------------------------------------------
+
+17/40 Testing: volume_sob_vpolytope_simplex
+17/40 Test: volume_sob_vpolytope_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_sob_vpolytope" "-tc=simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_sob_vpolytope_simplex" start time: Nov 25 12:08 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-simplex5
+Number type: d
+Computed volume 0.00810133
+Expected volume = 0.00810133
+Relative error (expected) = 3.36916e-07
+Relative error (exact) = 0.0278401
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  21.34 sec
+----------------------------------------------------------
+Test Passed.
+"volume_sob_vpolytope_simplex" end time: Nov 25 12:09 GMT
+"volume_sob_vpolytope_simplex" time elapsed: 00:00:21
+----------------------------------------------------------
+
+18/40 Testing: volume_cg_hpolytope_cube
+18/40 Test: volume_cg_hpolytope_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_hpolytope" "-tc=cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_hpolytope_cube" start time: Nov 25 12:09 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-cube10
+Number type: d
+Computed volume 1079.56
+Expected volume = 1079.56
+Relative error (expected) = 3.53982e-06
+Relative error (exact) = 0.0542541
+Computed volume 1110.92
+Expected volume = 1110.92
+Relative error (expected) = 3.04603e-06
+Relative error (exact) = 0.0848795
+Computed volume 1113.93
+Expected volume = 1113.93
+Relative error (expected) = 4.36348e-06
+Relative error (exact) = 0.0878175
+--- Testing volume of H-cube20
+Number type: d
+Computed volume 1.1025e+06
+Expected volume = 1.1025e+06
+Relative error (expected) = 4.0008e-06
+Relative error (exact) = 0.0514301
+Computed volume 1.05174e+06
+Expected volume = 1.05174e+06
+Relative error (expected) = 1.46158e-06
+Relative error (exact) = 0.00301889
+Computed volume 1.03312e+06
+Expected volume = 995224
+Relative error (expected) = 0.0380787
+Relative error (exact) = 0.0147392
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      6 |      6 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   2.71 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_hpolytope_cube" end time: Nov 25 12:09 GMT
+"volume_cg_hpolytope_cube" time elapsed: 00:00:02
+----------------------------------------------------------
+
+19/40 Testing: volume_cg_hpolytope_cross
+19/40 Test: volume_cg_hpolytope_cross
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_hpolytope" "-tc=cross"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_hpolytope_cross" start time: Nov 25 12:09 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-cross10
+Number type: d
+Computed volume 0.000292199
+Expected volume = 0.000292199
+Relative error (expected) = 3.12087e-08
+Relative error (exact) = 0.0354804
+Computed volume 0.000274014
+Expected volume = 0.000274014
+Relative error (expected) = 1.03957e-06
+Relative error (exact) = 0.0289617
+Computed volume 0.000294463
+Expected volume = 0.000294463
+Relative error (expected) = 7.87231e-07
+Relative error (exact) = 0.0435043
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      3 |      3 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   6.38 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_hpolytope_cross" end time: Nov 25 12:09 GMT
+"volume_cg_hpolytope_cross" time elapsed: 00:00:06
+----------------------------------------------------------
+
+20/40 Testing: volume_cg_hpolytope_birkhoff
+20/40 Test: volume_cg_hpolytope_birkhoff
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_hpolytope" "-tc=birk"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_hpolytope_birkhoff" start time: Nov 25 12:09 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-birk3
+Number type: d
+Computed volume 0.122104
+Expected volume = 0.122104
+Relative error (expected) = 1.06608e-06
+Relative error (exact) = 0.023169
+Computed volume 0.11326
+Expected volume = 0.11326
+Relative error (expected) = 2.18484e-06
+Relative error (exact) = 0.093922
+--- Testing volume of H-birk4
+Number type: d
+Computed volume 0.00108943
+Expected volume = 0.00108943
+Relative error (expected) = 1.08032e-06
+Relative error (exact) = 0.123102
+Computed volume 0.00102195
+Expected volume = 0.00110742
+Relative error (expected) = 0.0771766
+Relative error (exact) = 0.0535404
+--- Testing volume of H-birk5
+Number type: d
+Computed volume 2.25982e-07
+Expected volume = 2.00743e-07
+Relative error (expected) = 0.125729
+Relative error (exact) = 0.00436583
+Computed volume 1.99284e-07
+Expected volume = 2.05779e-07
+Relative error (expected) = 0.0315628
+Relative error (exact) = 0.114293
+--- Testing volume of H-birk6
+Number type: d
+Computed volume 9.85929e-13
+Expected volume = 9.85929e-13
+Relative error (expected) = 2.40399e-07
+Relative error (exact) = 0.042709
+Computed volume 9.46541e-13
+Expected volume = 8.20587e-13
+Relative error (expected) = 0.153493
+Relative error (exact) = 0.00105259
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      8 |      8 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  14.67 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_hpolytope_birkhoff" end time: Nov 25 12:09 GMT
+"volume_cg_hpolytope_birkhoff" time elapsed: 00:00:14
+----------------------------------------------------------
+
+21/40 Testing: volume_cg_hpolytope_prod_simplex
+21/40 Test: volume_cg_hpolytope_prod_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_hpolytope" "-tc=prod_simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_hpolytope_prod_simplex" start time: Nov 25 12:09 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-prod_simplex5
+Number type: d
+Computed volume 6.3448e-05
+Expected volume = 6.3448e-05
+Relative error (expected) = 1.84396e-07
+Relative error (exact) = 0.086349
+Computed volume 6.94695e-05
+Expected volume = 6.94695e-05
+Relative error (expected) = 3.51641e-07
+Relative error (exact) = 0.000361152
+Computed volume 6.58752e-05
+Expected volume = 6.13242e-05
+Relative error (expected) = 0.0742124
+Relative error (exact) = 0.0513969
+--- Testing volume of H-prod_simplex10
+Number type: d
+Computed volume 1.36206e-14
+Expected volume = 1.36206e-14
+Relative error (expected) = 1.42928e-06
+Relative error (exact) = 0.820641
+Computed volume 8.48116e-14
+Expected volume = 8.48116e-14
+Relative error (expected) = 3.12491e-07
+Relative error (exact) = 0.116815
+Computed volume 7.47796e-14
+Expected volume = 6.90898e-14
+Relative error (expected) = 0.082354
+Relative error (exact) = 0.0152878
+--- Testing volume of H-prod_simplex15
+Number type: d
+Computed volume 1.93763e-26
+Expected volume = 1.93763e-26
+Relative error (expected) = 1.8894e-06
+Relative error (exact) = 0.966866
+Computed volume 5.4624e-25
+Expected volume = 5.4624e-25
+Relative error (expected) = 2.96619e-07
+Relative error (exact) = 0.0659226
+Computed volume 5.76173e-25
+Expected volume = 6.95082e-25
+Relative error (expected) = 0.171072
+Relative error (exact) = 0.0147374
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      9 |      9 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  24.00 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_hpolytope_prod_simplex" end time: Nov 25 12:09 GMT
+"volume_cg_hpolytope_prod_simplex" time elapsed: 00:00:23
+----------------------------------------------------------
+
+22/40 Testing: volume_cg_hpolytope_simplex
+22/40 Test: volume_cg_hpolytope_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_hpolytope" "-tc=simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_hpolytope_simplex" start time: Nov 25 12:09 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-simplex10
+Number type: d
+Computed volume 3.14369e-07
+Expected volume = 3.14369e-07
+Relative error (expected) = 7.1688e-07
+Relative error (exact) = 0.140781
+Computed volume 2.70598e-07
+Expected volume = 2.70598e-07
+Relative error (expected) = 8.83805e-07
+Relative error (exact) = 0.0180531
+Computed volume 2.76423e-07
+Expected volume = 2.53893e-07
+Relative error (expected) = 0.0887375
+Relative error (exact) = 0.00308317
+--- Testing volume of H-simplex20
+Number type: d
+Computed volume 1.12891e-23
+Expected volume = 1.12891e-23
+Relative error (expected) = 2.86916e-06
+Relative error (exact) = 0.999973
+Computed volume 4.16845e-19
+Expected volume = 4.16845e-19
+Relative error (expected) = 2.41333e-07
+Relative error (exact) = 0.0141433
+Computed volume 4.05848e-19
+Expected volume = 3.79918e-19
+Relative error (expected) = 0.0682524
+Relative error (exact) = 0.0126108
+--- Testing volume of H-simplex30
+Number type: d
+Computed volume 7.06547e-41
+Expected volume = 7.06547e-41
+Relative error (expected) = 2.53051e-07
+Relative error (exact) = 1
+Computed volume 4.02288e-33
+Expected volume = 4.02288e-33
+Relative error (expected) = 2.62226e-07
+Relative error (exact) = 0.0670801
+Computed volume 3.58495e-33
+Expected volume = 3.47743e-33
+Relative error (expected) = 0.030919
+Relative error (exact) = 0.0490822
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      9 |      9 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  15.28 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_hpolytope_simplex" end time: Nov 25 12:10 GMT
+"volume_cg_hpolytope_simplex" time elapsed: 00:00:15
+----------------------------------------------------------
+
+23/40 Testing: volume_cg_hpolytope_skinny_cube
+23/40 Test: volume_cg_hpolytope_skinny_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_hpolytope" "-tc=skinny_cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_hpolytope_skinny_cube" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-skinny_cube10
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      0 |      0 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_hpolytope_skinny_cube" end time: Nov 25 12:10 GMT
+"volume_cg_hpolytope_skinny_cube" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/40 Testing: volume_cg_vpolytope_cube
+24/40 Test: volume_cg_vpolytope_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_vpolytope" "-tc=cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_vpolytope_cube" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-cube2
+Number type: d
+Computed volume 3.88715
+Expected volume = 3.88715
+Relative error (expected) = 1.20703e-06
+Relative error (exact) = 0.0282137
+Computed volume 4.04324
+Expected volume = 4.04324
+Relative error (expected) = 9.25089e-07
+Relative error (exact) = 0.0108091
+Computed volume 4.33111
+Expected volume = 4.33111
+Relative error (expected) = 1.66973e-07
+Relative error (exact) = 0.0827777
+--- Testing volume of V-cube4
+Number type: d
+Computed volume 15.5448
+Expected volume = 15.5448
+Relative error (expected) = 2.39809e-07
+Relative error (exact) = 0.0284498
+Computed volume 15.4739
+Expected volume = 15.4739
+Relative error (expected) = 3.10126e-06
+Relative error (exact) = 0.0328783
+Computed volume 15.1616
+Expected volume = 15.1616
+Relative error (expected) = 2.08663e-06
+Relative error (exact) = 0.052402
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      1 skipped
+[doctest] assertions:      6 |      6 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  16.29 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_vpolytope_cube" end time: Nov 25 12:10 GMT
+"volume_cg_vpolytope_cube" time elapsed: 00:00:16
+----------------------------------------------------------
+
+25/40 Testing: volume_cg_vpolytope_cross
+25/40 Test: volume_cg_vpolytope_cross
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_vpolytope" "-tc=cross"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_vpolytope_cross" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-cross5
+Number type: d
+Computed volume 0.281565
+Expected volume = 0.281565
+Relative error (expected) = 6.03471e-07
+Relative error (exact) = 0.0558681
+Computed volume 0.23355
+Expected volume = 0.23355
+Relative error (expected) = 1.86481e-06
+Relative error (exact) = 0.124189
+Computed volume 0.254434
+Expected volume = 0.254434
+Relative error (expected) = 1.70018e-06
+Relative error (exact) = 0.0458709
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      1 skipped
+[doctest] assertions:      3 |      3 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   4.58 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_vpolytope_cross" end time: Nov 25 12:10 GMT
+"volume_cg_vpolytope_cross" time elapsed: 00:00:04
+----------------------------------------------------------
+
+26/40 Testing: volume_cg_vpolytope_simplex
+26/40 Test: volume_cg_vpolytope_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cg_vpolytope" "-tc=simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cg_vpolytope_simplex" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:      0 |      0 passed |      0 failed |      2 skipped
+[doctest] assertions:      0 |      0 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cg_vpolytope_simplex" end time: Nov 25 12:10 GMT
+"volume_cg_vpolytope_simplex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/40 Testing: volume_cb_hpolytope_cube
+27/40 Test: volume_cb_hpolytope_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_hpolytope" "-tc=cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_hpolytope_cube" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-cube10
+Number type: d
+Computed volume 1118.63
+Expected volume = 1118.63
+Relative error (expected) = 3.45888e-06
+Relative error (exact) = 0.0924159
+Computed volume 1163.36
+Expected volume = 1163.36
+Relative error (expected) = 3.84602e-06
+Relative error (exact) = 0.136098
+Computed volume 1119.15
+Expected volume = 1119.15
+Relative error (expected) = 3.51677e-06
+Relative error (exact) = 0.0929161
+Computed volume 1086.36
+Expected volume = 1100.73
+Relative error (expected) = 0.0130515
+Relative error (exact) = 0.0609022
+--- Testing volume of H-cube20
+Number type: d
+Computed volume 965744
+Expected volume = 965744
+Relative error (expected) = 3.89915e-07
+Relative error (exact) = 0.0789951
+Computed volume 1.05123e+06
+Expected volume = 1.05123e+06
+Relative error (expected) = 2.78466e-06
+Relative error (exact) = 0.00252826
+Computed volume 1.00647e+06
+Expected volume = 1.00647e+06
+Relative error (expected) = 3.05285e-06
+Relative error (exact) = 0.0401525
+Computed volume 961550
+Expected volume = 1.00702e+06
+Relative error (expected) = 0.0451532
+Relative error (exact) = 0.0829946
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      8 |      8 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_hpolytope_cube" end time: Nov 25 12:10 GMT
+"volume_cb_hpolytope_cube" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/40 Testing: volume_cb_hpolytope_cross
+28/40 Test: volume_cb_hpolytope_cross
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_hpolytope" "-tc=cross"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_hpolytope_cross" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-cross10
+Number type: d
+Computed volume 0.000291034
+Expected volume = 0.000291034
+Relative error (expected) = 3.79796e-07
+Relative error (exact) = 0.0313523
+Computed volume 0.000281135
+Expected volume = 0.000281135
+Relative error (expected) = 2.9264e-07
+Relative error (exact) = 0.00372738
+Computed volume 0.000293788
+Expected volume = 0.000294805
+Relative error (expected) = 0.00345136
+Relative error (exact) = 0.0411097
+Computed volume 0.000286704
+Expected volume = 0.000286491
+Relative error (expected) = 0.000745217
+Relative error (exact) = 0.0160092
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      4 |      4 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.85 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_hpolytope_cross" end time: Nov 25 12:10 GMT
+"volume_cb_hpolytope_cross" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/40 Testing: volume_cb_hpolytope_birkhoff
+29/40 Test: volume_cb_hpolytope_birkhoff
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_hpolytope" "-tc=birk"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_hpolytope_birkhoff" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-birk3
+Number type: d
+Computed volume 0.125548
+Expected volume = 0.125548
+Relative error (expected) = 5.08316e-07
+Relative error (exact) = 0.00438451
+Computed volume 0.113241
+Expected volume = 0.113241
+Relative error (expected) = 2.84953e-06
+Relative error (exact) = 0.0940694
+Computed volume 0.112446
+Expected volume = 0.112446
+Relative error (expected) = 1.16272e-06
+Relative error (exact) = 0.100433
+--- Testing volume of H-birk4
+Number type: d
+Computed volume 0.00109593
+Expected volume = 0.00109593
+Relative error (expected) = 2.39026e-06
+Relative error (exact) = 0.129801
+Computed volume 0.000783142
+Expected volume = 0.00108152
+Relative error (expected) = 0.275888
+Relative error (exact) = 0.192652
+Computed volume 0.000839606
+Expected volume = 0.000845192
+Relative error (expected) = 0.00660903
+Relative error (exact) = 0.134443
+--- Testing volume of H-birk5
+Number type: d
+Computed volume 2.12236e-07
+Expected volume = 2.55884e-07
+Relative error (expected) = 0.170577
+Relative error (exact) = 0.0567282
+Computed volume 2.41397e-07
+Expected volume = 1.39042e-07
+Relative error (expected) = 0.736143
+Relative error (exact) = 0.0728746
+Computed volume 2.58163e-07
+Expected volume = 2.11924e-07
+Relative error (expected) = 0.218186
+Relative error (exact) = 0.147391
+--- Testing volume of H-birk6
+Number type: d
+Computed volume 6.10783e-13
+Expected volume = 6.10783e-13
+Relative error (expected) = 4.68266e-07
+Relative error (exact) = 0.354042
+Computed volume 4.39192e-13
+Expected volume = 4.39192e-13
+Relative error (expected) = 4.69553e-08
+Relative error (exact) = 0.535515
+Computed volume 9.88149e-13
+Expected volume = 6.62349e-13
+Relative error (expected) = 0.491885
+Relative error (exact) = 0.0450564
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:     12 |     12 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   3.93 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_hpolytope_birkhoff" end time: Nov 25 12:10 GMT
+"volume_cb_hpolytope_birkhoff" time elapsed: 00:00:03
+----------------------------------------------------------
+
+30/40 Testing: volume_cb_hpolytope_prod_simplex
+30/40 Test: volume_cb_hpolytope_prod_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_hpolytope" "-tc=prod_simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_hpolytope_prod_simplex" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-prod_simplex5
+Number type: d
+Computed volume 6.40072e-05
+Expected volume = 6.40072e-05
+Relative error (expected) = 3.1226e-07
+Relative error (exact) = 0.0782966
+Computed volume 6.69062e-05
+Expected volume = 6.69062e-05
+Relative error (expected) = 5.09657e-07
+Relative error (exact) = 0.0365512
+Computed volume 7.50572e-05
+Expected volume = 6.20744e-05
+Relative error (expected) = 0.20915
+Relative error (exact) = 0.0808242
+Computed volume 6.31986e-05
+Expected volume = 6.31986e-05
+Relative error (expected) = 3.20764e-07
+Relative error (exact) = 0.0899405
+--- Testing volume of H-prod_simplex10
+Number type: d
+Computed volume 6.83631e-14
+Expected volume = 6.83631e-14
+Relative error (expected) = 1.61431e-07
+Relative error (exact) = 0.0997819
+Computed volume 8.19581e-14
+Expected volume = 8.19581e-14
+Relative error (expected) = 4.98087e-07
+Relative error (exact) = 0.0792392
+Computed volume 9.35005e-14
+Expected volume = 9.35005e-14
+Relative error (expected) = 4.92824e-07
+Relative error (exact) = 0.231232
+Computed volume 7.43261e-14
+Expected volume = 6.57309e-14
+Relative error (expected) = 0.130764
+Relative error (exact) = 0.0212594
+--- Testing volume of H-prod_simplex15
+Number type: d
+Computed volume 6.25978e-25
+Expected volume = 6.25978e-25
+Relative error (expected) = 5.05582e-08
+Relative error (exact) = 0.07043
+Computed volume 9.33162e-25
+Expected volume = 9.33162e-25
+Relative error (expected) = 3.37694e-07
+Relative error (exact) = 0.595719
+Computed volume 4.82204e-25
+Expected volume = 5.04617e-25
+Relative error (expected) = 0.0444163
+Relative error (exact) = 0.175426
+Computed volume 5.68169e-25
+Expected volume = 5.72542e-25
+Relative error (expected) = 0.00763711
+Relative error (exact) = 0.0284233
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:     12 |     12 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   1.07 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_hpolytope_prod_simplex" end time: Nov 25 12:10 GMT
+"volume_cb_hpolytope_prod_simplex" time elapsed: 00:00:01
+----------------------------------------------------------
+
+31/40 Testing: volume_cb_hpolytope_simplex
+31/40 Test: volume_cb_hpolytope_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_hpolytope" "-tc=simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_hpolytope_simplex" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-simplex10
+Number type: d
+Computed volume 3.22432e-07
+Expected volume = 3.22432e-07
+Relative error (expected) = 9.34815e-07
+Relative error (exact) = 0.170042
+Computed volume 2.90617e-07
+Expected volume = 2.90617e-07
+Relative error (expected) = 6.62987e-07
+Relative error (exact) = 0.0545917
+Computed volume 2.82542e-07
+Expected volume = 2.93392e-07
+Relative error (expected) = 0.0369816
+Relative error (exact) = 0.025288
+Computed volume 3.00286e-07
+Expected volume = 3.00286e-07
+Relative error (expected) = 1.65318e-06
+Relative error (exact) = 0.089676
+--- Testing volume of H-simplex20
+Number type: d
+Computed volume 4.03788e-19
+Expected volume = 4.03788e-19
+Relative error (expected) = 8.97577e-07
+Relative error (exact) = 0.0176242
+Computed volume 4.14182e-19
+Expected volume = 4.14182e-19
+Relative error (expected) = 1.03422e-07
+Relative error (exact) = 0.00766412
+Computed volume 4.32089e-19
+Expected volume = 4.5877e-19
+Relative error (expected) = 0.0581569
+Relative error (exact) = 0.051231
+Computed volume 4.26259e-19
+Expected volume = 4.54245e-19
+Relative error (expected) = 0.0616105
+Relative error (exact) = 0.0370457
+--- Testing volume of H-simplex30
+Number type: d
+Computed volume 2.5776e-33
+Expected volume = 2.5776e-33
+Relative error (expected) = 7.3431e-07
+Relative error (exact) = 0.316284
+Computed volume 3.5157e-33
+Expected volume = 3.5157e-33
+Relative error (expected) = 5.66104e-07
+Relative error (exact) = 0.067451
+Computed volume 3.29533e-33
+Expected volume = 2.74483e-33
+Relative error (expected) = 0.20056
+Relative error (exact) = 0.125903
+Computed volume 3.26561e-33
+Expected volume = 3.08769e-33
+Relative error (expected) = 0.0576211
+Relative error (exact) = 0.133789
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:     12 |     12 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   1.13 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_hpolytope_simplex" end time: Nov 25 12:10 GMT
+"volume_cb_hpolytope_simplex" time elapsed: 00:00:01
+----------------------------------------------------------
+
+32/40 Testing: volume_cb_hpolytope_skinny_cube
+32/40 Test: volume_cb_hpolytope_skinny_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_hpolytope" "-tc=skinny_cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_hpolytope_skinny_cube" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of H-skinny_cube10
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      5 skipped
+[doctest] assertions:      0 |      0 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_hpolytope_skinny_cube" end time: Nov 25 12:10 GMT
+"volume_cb_hpolytope_skinny_cube" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/40 Testing: volume_cb_vpolytope_cube
+33/40 Test: volume_cb_vpolytope_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_vpolytope" "-tc=cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_vpolytope_cube" start time: Nov 25 12:10 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-cube2
+Number type: d
+Computed volume 4.43443
+Expected volume = 4.43443
+Relative error (expected) = 1.94715e-07
+Relative error (exact) = 0.108607
+Computed volume 4.12932
+Expected volume = 4.129
+Relative error (expected) = 7.7283e-05
+Relative error (exact) = 0.0323298
+Computed volume 4.43443
+Expected volume = 4.43443
+Relative error (expected) = 1.94715e-07
+Relative error (exact) = 0.108607
+Computed volume 4.40191
+Expected volume = 4.40191
+Relative error (expected) = 6.44125e-07
+Relative error (exact) = 0.100477
+--- Testing volume of V-cube5
+Number type: d
+Computed volume 34.7114
+Expected volume = 32
+Relative error (expected) = 0.0847301
+Relative error (exact) = 0.0847301
+Computed volume 33.3537
+Expected volume = 32
+Relative error (expected) = 0.0423041
+Relative error (exact) = 0.0423041
+Computed volume 34.7286
+Expected volume = 32
+Relative error (expected) = 0.0852674
+Relative error (exact) = 0.0852674
+Computed volume 35.9912
+Expected volume = 32
+Relative error (expected) = 0.124726
+Relative error (exact) = 0.124726
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      8 |      8 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  19.23 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_vpolytope_cube" end time: Nov 25 12:11 GMT
+"volume_cb_vpolytope_cube" time elapsed: 00:00:19
+----------------------------------------------------------
+
+34/40 Testing: volume_cb_vpolytope_cross
+34/40 Test: volume_cb_vpolytope_cross
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_vpolytope" "-tc=cross"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_vpolytope_cross" start time: Nov 25 12:11 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-cross5
+Number type: d
+Computed volume 0.282276
+Expected volume = 0.28425
+Relative error (expected) = 0.00694572
+Relative error (exact) = 0.0585338
+Computed volume 0.277598
+Expected volume = 0.273255
+Relative error (expected) = 0.0158951
+Relative error (exact) = 0.040994
+Computed volume 0.28284
+Expected volume = 0.28413
+Relative error (expected) = 0.00454155
+Relative error (exact) = 0.0606485
+Computed volume 0.277812
+Expected volume = 0.286071
+Relative error (expected) = 0.0288689
+Relative error (exact) = 0.0417967
+--- Testing volume of V-cross10
+Number type: d
+Computed volume 0.000291034
+Expected volume = 0.000283841
+Relative error (expected) = 0.025342
+Relative error (exact) = 0.0313523
+Computed volume 0.000281135
+Expected volume = 0.00031188
+Relative error (expected) = 0.0985793
+Relative error (exact) = 0.00372738
+Computed volume 0.000293383
+Expected volume = 0.000284841
+Relative error (expected) = 0.0299872
+Relative error (exact) = 0.0396747
+Computed volume 0.000286704
+Expected volume = 0.00027759
+Relative error (expected) = 0.0328344
+Relative error (exact) = 0.0160092
+--- Testing volume of V-cross20
+Number type: d
+Computed volume 4.57478e-13
+Expected volume = 4.16807e-13
+Relative error (expected) = 0.0975782
+Relative error (exact) = 0.0614393
+Computed volume 4.76253e-13
+Expected volume = 4.42692e-13
+Relative error (expected) = 0.0758119
+Relative error (exact) = 0.105001
+Computed volume 4.45525e-13
+Expected volume = 4.19453e-13
+Relative error (expected) = 0.0621572
+Relative error (exact) = 0.0337055
+Computed volume 4.63423e-13
+Expected volume = 4.63423e-13
+Relative error (expected) = 8.99592e-07
+Relative error (exact) = 0.0752313
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:     12 |     12 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  78.24 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_vpolytope_cross" end time: Nov 25 12:12 GMT
+"volume_cb_vpolytope_cross" time elapsed: 00:01:18
+----------------------------------------------------------
+
+35/40 Testing: volume_cb_vpolytope_simplex
+35/40 Test: volume_cb_vpolytope_simplex
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_vpolytope" "-tc=simplex"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_vpolytope_simplex" start time: Nov 25 12:12 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume of V-simplex5
+Number type: d
+Computed volume 0.0088722
+Expected volume = 0.00846587
+Relative error (expected) = 0.0479964
+Relative error (exact) = 0.0646642
+Computed volume 0.0096107
+Expected volume = 0.0096107
+Relative error (expected) = 4.84496e-07
+Relative error (exact) = 0.153285
+Computed volume 0.00886327
+Expected volume = 0.00842591
+Relative error (expected) = 0.0519065
+Relative error (exact) = 0.0635924
+Computed volume 0.00887566
+Expected volume = 0.00855401
+Relative error (expected) = 0.0376021
+Relative error (exact) = 0.065079
+--- Testing volume of V-simplex10
+Number type: d
+Computed volume 2.48289e-07
+Expected volume = 2.35669e-07
+Relative error (expected) = 0.0535511
+Relative error (exact) = 0.0990076
+Computed volume 3.14425e-07
+Expected volume = 3.00778e-07
+Relative error (expected) = 0.0453723
+Relative error (exact) = 0.140985
+Computed volume 2.90235e-07
+Expected volume = 3.0366e-07
+Relative error (expected) = 0.0442095
+Relative error (exact) = 0.053206
+Computed volume 2.75535e-07
+Expected volume = 2.72952e-07
+Relative error (expected) = 0.00946426
+Relative error (exact) = 0.000137542
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      2 skipped
+[doctest] assertions:      8 |      8 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  54.50 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_vpolytope_simplex" end time: Nov 25 12:13 GMT
+"volume_cb_vpolytope_simplex" time elapsed: 00:00:54
+----------------------------------------------------------
+
+36/40 Testing: volume_cb_zonotopes_uniform_zonotopes
+36/40 Test: volume_cb_zonotopes_uniform_zonotopes
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_zonotopes" "-tc=uniform_zonotopes"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_zonotopes_uniform_zonotopes" start time: Nov 25 12:13 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+Number type: d
+Computed volume 1.21085e+11
+Expected volume = 1.13244e+11
+Relative error (expected) = 0.0692404
+Relative error (exact) = 0.0692404
+Computed volume 1.09917e+11
+Expected volume = 1.13244e+11
+Relative error (expected) = 0.0293752
+Relative error (exact) = 0.0293752
+Computed volume 1.08307e+11
+Expected volume = 1.13244e+11
+Relative error (expected) = 0.0435925
+Relative error (exact) = 0.0435925
+Number type: d
+Computed volume 1.19983e+11
+Expected volume = 1.13244e+11
+Relative error (expected) = 0.0595048
+Relative error (exact) = 0.0595048
+Computed volume 1.09912e+11
+Expected volume = 1.13244e+11
+Relative error (expected) = 0.0294198
+Relative error (exact) = 0.0294198
+Computed volume 1.12733e+11
+Expected volume = 1.13244e+11
+Relative error (expected) = 0.00451491
+Relative error (exact) = 0.00451491
+Number type: d
+Computed volume 5.7603e+20
+Expected volume = 5.7603e+20
+Relative error (expected) = 4.13198e-07
+Relative error (exact) = 0.107112
+Computed volume 5.959e+20
+Expected volume = 6.46196e+20
+Relative error (expected) = 0.0778342
+Relative error (exact) = 0.0763125
+Computed volume 6.11928e+20
+Expected volume = 5.98586e+20
+Relative error (expected) = 0.0222891
+Relative error (exact) = 0.0514678
+Number type: d
+Computed volume 7.41071e+20
+Expected volume = 7.41071e+20
+Relative error (expected) = 5.88982e-07
+Relative error (exact) = 0.148713
+Computed volume 7.64101e+20
+Expected volume = 7.64101e+20
+Relative error (expected) = 4.00766e-07
+Relative error (exact) = 0.184412
+Computed volume 5.61442e+20
+Expected volume = 5.3287e+20
+Relative error (expected) = 0.0536186
+Relative error (exact) = 0.129725
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      0 skipped
+[doctest] assertions:     12 |     12 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  44.70 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_zonotopes_uniform_zonotopes" end time: Nov 25 12:13 GMT
+"volume_cb_zonotopes_uniform_zonotopes" time elapsed: 00:00:44
+----------------------------------------------------------
+
+37/40 Testing: volume_cb_vpoly_intersection_vpoly_random_vpoly_sphere
+37/40 Test: volume_cb_vpoly_intersection_vpoly_random_vpoly_sphere
+Command: "/home/marcrigter/github/volume_approximation/test/build/volume_cb_vpoly_intersection_vpoly" "-tc=random_vpoly_sphere"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"volume_cb_vpoly_intersection_vpoly_random_vpoly_sphere" start time: Nov 25 12:13 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing volume VP1-5-10 , VP2-5-12
+Number type: d
+Computed volume 0.0119774
+Expected volume = 0.0119774
+Relative error (expected) = 2.57163e-06
+Relative error (exact) = 0.162556
+Computed volume 0.0136065
+Expected volume = 0.0136065
+Relative error (expected) = 2.43768e-06
+Relative error (exact) = 0.0486518
+Computed volume 0.013812
+Expected volume = 0.013812
+Relative error (expected) = 1.85389e-06
+Relative error (exact) = 0.0342794
+Computed volume 0.0119665
+Expected volume = 0.0119665
+Relative error (expected) = 4.16852e-06
+Relative error (exact) = 0.163313
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      0 skipped
+[doctest] assertions:      4 |      4 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =  13.83 sec
+----------------------------------------------------------
+Test Passed.
+"volume_cb_vpoly_intersection_vpoly_random_vpoly_sphere" end time: Nov 25 12:14 GMT
+"volume_cb_vpoly_intersection_vpoly_random_vpoly_sphere" time elapsed: 00:00:13
+----------------------------------------------------------
+
+38/40 Testing: new_rounding_test_round_skinny_cube
+38/40 Test: new_rounding_test_round_skinny_cube
+Command: "/home/marcrigter/github/volume_approximation/test/build/new_rounding_test" "-tc=round_skinny_cube"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"new_rounding_test_round_skinny_cube" start time: Nov 25 12:14 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+
+--- Testing rounding of H-skinny_cube5
+Number type: d
+Computed volume 3070.64
+Expected volume = 3070.64
+Relative error (expected) = 1.03399e-06
+Relative error (exact) = 0.040424
+Computed volume 3169.77
+Expected volume = 3188.25
+Relative error (expected) = 0.00579506
+Relative error (exact) = 0.00944566
+Computed volume 3136.41
+Expected volume = 3140.6
+Relative error (expected) = 0.00133309
+Relative error (exact) = 0.0198708
+
+--- Testing rounding of H-skinny_cube10
+Number type: d
+Computed volume 101895
+Expected volume = 122550
+Relative error (expected) = 0.168543
+Relative error (exact) = 0.00493125
+Computed volume 117623
+Expected volume = 108426
+Relative error (expected) = 0.0848198
+Relative error (exact) = 0.148659
+Computed volume 104755
+Expected volume = 105003
+Relative error (expected) = 0.00235942
+Relative error (exact) = 0.0230005
+
+--- Testing rounding of H-skinny_cube20
+Number type: d
+Computed volume 8.26497e+07
+Expected volume = 8.26497e+07
+Relative error (expected) = 2.27811e-07
+Relative error (exact) = 0.211791
+Computed volume 8.9498e+07
+Expected volume = 15.9495
+Relative error (expected) = 5.61134e+06
+Relative error (exact) = 0.14648
+Computed volume 1.09218e+08
+Expected volume = 1.09218e+08
+Relative error (expected) = 6.00126e-07
+Relative error (exact) = 0.0415834
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      0 skipped
+[doctest] assertions:      9 |      9 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   2.11 sec
+----------------------------------------------------------
+Test Passed.
+"new_rounding_test_round_skinny_cube" end time: Nov 25 12:14 GMT
+"new_rounding_test_round_skinny_cube" time elapsed: 00:00:02
+----------------------------------------------------------
+
+39/40 Testing: logconcave_sampling_test_hmc
+39/40 Test: logconcave_sampling_test_hmc
+Command: "/home/marcrigter/github/volume_approximation/test/build/logconcave_sampling_test" "-tc=hmc"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"logconcave_sampling_test_hmc" start time: Nov 25 12:14 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing Hamiltonian Monte Carlo
+Dimensionality: 10
+Target ergodic mean norm: 0
+Error (relative if possible) after 75000 samples: 0.0127632
+ETA (us): 63073
+
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      3 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"logconcave_sampling_test_hmc" end time: Nov 25 12:14 GMT
+"logconcave_sampling_test_hmc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/40 Testing: logconcave_sampling_test_uld
+40/40 Test: logconcave_sampling_test_uld
+Command: "/home/marcrigter/github/volume_approximation/test/build/logconcave_sampling_test" "-tc=uld"
+Directory: /home/marcrigter/github/volume_approximation/test/build
+"logconcave_sampling_test_uld" start time: Nov 25 12:14 GMT
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "1.2.9"
+[doctest] run with "--help" for options
+--- Testing Underdamped Langevin Diffusion
+Dimensionality: 5
+Target ergodic mean norm: 0
+Error (relative if possible) after 75000 samples: 0.000492043
+ETA (us): 169678
+
+===============================================================================
+[doctest] test cases:      1 |      1 passed |      0 failed |      3 skipped
+[doctest] assertions:      1 |      1 passed |      0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"logconcave_sampling_test_uld" end time: Nov 25 12:14 GMT
+"logconcave_sampling_test_uld" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 25 12:14 GMT
